@@ -1,0 +1,73 @@
+\documentclass[12pt]{article}
+%\textheight 210mm
+\textheight 218mm    % textheight is actually 210mm,
+\topmargin -3.1mm    % this is to get header in
+\textwidth 145mm
+\oddsidemargin 9.6mm
+\evensidemargin 9.6mm
+\begin{document}
+\parindent 0mm
+\parskip 12pt
+\thispagestyle{empty}
+\renewcommand{\thefootnote}{\mbox{$\fnsymbol{footnote}$}}
+\renewcommand{\footnoterule}{ }
+\newcommand{\Today}{\today \typeout{** Warning:
+Letter is dated with today's system date.}}
+
+\newcommand{\Header}
+{ \vspace*{-17mm}    % this is to get margins right
+{\Large \rm Your Company Ltd.}
+\medskip \smallskip \hrule \medskip
+\footnotetext{ \normalsize
+\medskip \hrule \bigskip
+\noindent
+Your Department, Your Company,
+Your Road, City 1\\
+Tel: (01) 9999999, Fax: (01) 8888888,
+E-mail: youremail@mail.com
+}
+}
+
+\Header
+
+\renewcommand{\thefootnote}{\mbox{$\arabic{footnote}$}}
+
+\begin{tabular}{@{}ll}  % the @{} removes space before first item 
+Date: & \Today \\
+ & \\ 
+%%%%%%%%%%%%%%%%%%%%% ADDRESS %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+To:  & Addressee, Address Road, Address St. Address Town. \\ \typeout{** CHANGE ADDRESS}
+     & Fax: (01) 9999999   \\ 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+ & \\ 
+From: &  Sender Name \\
+ & \\ 
+%%%%%%%%%%%%%%%%%%%%% SUBJECT %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Subject: & Reason for Fax \\
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+ & \\ 
+%%%%%%%%%%%%%%%%%%%%% CONTENTS %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Contents: & 3 pages (including this page) \typeout{** 1 PAGE FAX OK?}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\end{tabular}
+
+%\textheight 210mm
+\textheight 208mm     % fix for the text length
+
+
+\medskip\smallskip
+\hrule
+\medskip
+%%%%%%%%%%%%%%%%%%%%% MESSAGE %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+Hi  
+
+Please find the blah blab blah this is the cover sheet so two more pages you add.
+
+Thank you,
+
+Your Name
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\end{document}
