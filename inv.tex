@@ -1,0 +1,32 @@
+\documentclass{letter}
+%\documentclass[10pt]{ltxdoc
+%\usepackage{showframe}
+\usepackage{invoice}
+\makeatletter
+  \def\@texttop{}
+\makeatother
+
+%\thispagestyle{empty}
+
+\address{Webwayz Ltd. \\ 19 Lorcan Villas, \\ Santry, Dublin 9.}
+\signature{Conor Gilmer \\
+ \textbf{email:} conor.gilmer@gmail.com\\ \textbf{Tel.} 086 8068764}
+\date{23. May 2013}
+
+\begin{document}
+\longindentation=0pt
+  \begin{letter}{Joe Client Ltd. \\ Dame St. \\ Dublin 1}
+\centerline{\bf \sc INVOICE NO. 11} \par    
+\opening{\textbf{Company No.} 123456 
+		\\ \textbf{VAT Registration No.} 98765643 
+		\\ \textbf{Period:} May 2012 }
+    In connection with my recent work for you, here is the invoice.
+    \begin{invoice}{Euro}{23}  %Irish VAT 23% from 2012 was 21%
+      \ProjectTitle{Website Development and SEO}%
+      \Fee{Development 2 days} {225} {2}
+      \Fee{SEO 1 days} {225} {1}
+      \Fee{Support 3 hours} {45} {3}
+    \end{invoice}
+    \closing{Kind Regards,}
+  \end{letter}
+\end{document}
