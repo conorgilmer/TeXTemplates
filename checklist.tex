@@ -1,0 +1,50 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Checklist Template               %
+%                                  %
+% Two of the lists use the         %
+% easylist.sty                     %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amssymb}
+\usepackage[ampersand]{easylist}
+
+
+\title{CheckList}
+\author{Conor Gilmer}
+\date{August 2015}
+
+\begin{document}
+
+\textbf{Check List Templates}
+
+
+\textbf{Itemized basic Checklist}
+\begin{itemize}
+\item[$\square$] Item One To Do
+\item[$\square$] Item Two To Do
+\item[$\boxtimes$] Item Three is Done.
+\end{itemize}
+
+
+\textbf{easy checklist basic}
+\begin{easylist}[checklist]
+& This is Level 1 (Bold) open item
+&& This is a level 2 open item
+\end{easylist}
+
+\textbf{easy checklist define bullets}
+\begin{easylist}
+  \ListProperties(Hide=100,Progressive=0cm,%
+      Style1*=\textbullet,%
+      Style2*=$\ast$,%
+      Style3*=$\square$,%
+      Style4*=$\boxtimes$)
+  & First thingy    % a bullet
+  &&&& Second thingy   % another bullet
+  &&& Third thingy  % a square
+  && Fourth thingy  % a *  
+\end{easylist}    
+
+
+\end{document}
