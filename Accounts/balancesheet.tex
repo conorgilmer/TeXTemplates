@@ -1,0 +1,94 @@
+%%
+%% GENERIC ENGLISH BALANCE SHEET REPORT
+%%
+\documentclass[english]{article}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{geometry}
+%\geometry{verbose,letterpaper,tmargin=1cm,bmargin=1cm,lmargin=1cm,rmargin=1cm}
+\usepackage{array}
+\usepackage{graphicx}
+\usepackage{setspace}
+\usepackage{longtable}
+\usepackage{eurosym}
+\fontfamily{cmss}\fontsize{10pt}{12pt}\selectfont
+\makeatletter
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% LyX specific LaTeX commands.
+%% Because html converters don't know tabularnewline
+\providecommand{\tabularnewline}{\\}
+
+
+\makeatother
+
+\usepackage{babel}
+
+\begin{document}
+%\noindent \includegraphics{(company_logo)}
+
+\noindent \vspace{10mm}
+
+
+
+\noindent \textbf{BALANCE SHEET}
+
+\noindent \vspace{10mm}
+
+
+\noindent \begin{tabular}{ll}
+\textbf{As At} & 31/8/15
+\tabularnewline
+\textbf{Date Created} & 14/9/15 \tabularnewline
+\end{tabular}
+
+\noindent \vspace{10mm}
+
+\noindent \textbf{Assets}
+
+\noindent \begin{tabular}{>{\raggedright}p{0.8\columnwidth}>{\raggedright}p{0.2\columnwidth}}
+%% foreach table\_assets
+%% (name\_chart) & (amount)\tabularnewline
+%% end
+\cline{2-2} 
+\textbf{Total Assets} & (amount\_total\_assets)\tabularnewline
+\end{tabular}
+
+\noindent \vspace{5mm}
+
+
+\noindent \textbf{Liabilities}
+
+\noindent \begin{tabular}{>{\raggedright}p{0.8\columnwidth}>{\raggedright}p{0.2\columnwidth}}
+%% foreach table\_liabilities
+%% (name\_chart) & (amount)\tabularnewline
+%% end
+\cline{2-2} 
+\textbf{Total Liabilities} & (amount\_total\_liabilities)\tabularnewline
+\end{tabular}
+
+\noindent \vspace{5mm}
+
+
+\noindent \textbf{Equity}
+
+\noindent \begin{tabular}{>{\raggedright}p{0.8\columnwidth}>{\raggedright}p{0.2\columnwidth}}
+%% foreach table_equity
+%% (name\_chart) & (amount)\tabularnewline
+%% end
+Current Earnings & (amount\_total\_current\_earnings)\tabularnewline
+\cline{2-2} 
+\textbf{Total Equity} & (amount\_total\_equity)\tabularnewline
+\end{tabular}
+
+\noindent \vspace{5mm}
+
+
+\noindent \begin{tabular}{>{\raggedright}p{0.8\columnwidth}>{\raggedright}p{0.2\columnwidth}}
+\textbf{Total Liabilities + Equity} & (amount\_total\_liabilities\_and\_equity)\tabularnewline
+\end{tabular}
+
+
+
+
+\end{document}
