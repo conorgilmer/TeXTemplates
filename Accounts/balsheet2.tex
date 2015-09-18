@@ -1,0 +1,30 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{spreadtab}
+\usepackage[autolanguage]{numprint}
+\usepackage[english]{babel}
+\begin{document}
+\begin{spreadtab}{{tabular}{lN60N60}}
+\multicolumn3c{@ \textbf{BALANCE SHEET} }\\
+\multicolumn3c{@For the year ended August 31, 2015}\\\hline
+                                             &\multicolumn1c{@Euro}   &\multicolumn1c{@Euro}\\
+                                             &\multicolumn1c{@2014}&\multicolumn1c{@2015}\\
+@\textbf{FUNDS}                              &       &\\
+@\quad Beginning Funds                       &   200 & 210\\
+@\quad Deficit or Surplus                    &    10 & -5\\[1.5ex]
+@                                            &  sum([0,-2]:[0,-1]) & sum([0,-2]:[0,-1])\\
+\\
+@\textbf{DEBITS}                             &       &\\
+@\quad Debitors                              &  40 & 30 \\
+@\quad Bank                                  &  150 & 145 \\
+@\quad Cash                                  &   50 & 50 \\[1.5ex]
+@\textit{Total Debtors}                      &  sum([0,-3]:[0,-1]) & sum([0,-3]:[0,-1])\\
+\\
+@\textbf{CREDITORS}                          &       &\\
+@ \quad Creditors                             &   30 & 20\\
+@\textit{Total Creditors}                    & sum([0,-1]:[0,-1]) & sum([0,-1]:[0,-1])\\
+\\
+@                                            & [0,-6]-[0,-2] & [0,-6]-[0,-2]\\\\\hline
+\end{spreadtab}
+\end{document}
