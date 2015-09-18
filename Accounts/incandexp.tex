@@ -6,21 +6,21 @@
 \usepackage[english]{babel}
 \begin{document}
 \begin{spreadtab}{{tabular}{lN60N60}}
-\multicolumn3c{@--- INCOME AND EXPENDITURE ACCOUNT ---}\\
+\multicolumn3c{@ \textbf{INCOME AND EXPENDITURE ACCOUNT}   }\\
 \multicolumn3c{@For the year ended AUGUST 31 2015}\\\hline
                                              &\multicolumn1c{@Euro}   &\multicolumn1c{@Euro}\\
                                              &\multicolumn1c{@Debit}&\multicolumn1c{@Credit}\\
-@INCOME                                      &       &\\
+@\textbf{INCOME}                             &       &\\
 @\quad Subs                                  &       & 220\\
 @\quad Gift                                  &       & 100\\[1.5ex]
-@Total Income                                &       & sum([0,-2]:[0,-1])\\
+@\textit{Total Income}                       &       & sum([0,-2]:[0,-1])\\
 \\
-@EXPENDITURE                                 &       &\\
+@\textbf{EXPENDITURE}                        &       &\\
 @\quad Bank Fees                             &     5 &\\
 @\quad Insurance                             &   100 &\\
 @\quad Rent                                  &   100 &\\
 @\quad Expenses                              &   120 &\\[1.5ex]
-@Total Expenditure                           &       & sum([-1,-4]:[-1,-1])\\
+@\textit{Total Expenditure}                  &       & sum([-1,-4]:[-1,-1])\\
 \\
 @Surplus/Deficit                             &       & [0,-9]-[0,-2]\\\\\hline
 \end{spreadtab}
