@@ -1,3 +1,4 @@
 #Club Accounts Templates
-+ Income and Expenditure
+uses the spreadtab package
++ Income and Expenditure (done)
 + Balance Sheet
