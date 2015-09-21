@@ -50,24 +50,23 @@ def incomeAccount(incomeSet, expenditureSet):
     totalexp = 0.0;
     print "Generate Income and Expenditure Account\n\n"
     print " Income and Expenditure Account        \n"
-    print "_______________________________________\n"
+    print "---------------------------------------\n"
     print " INCOME                                \n"
     for record in incomeSet:
         totalin = totalin + float(record[AMOUNT])
         print " %s \t %.2f " % (record[NAME], record[AMOUNT])
-    print " Total Income \t %.2f " % totalin
+    print "\n Total Income \t %.2f " % totalin
     print "                                       \n"
     print " EXPENDITURE                           \n"
     for record in expenditureSet:
         totalexp = totalexp + float(record[AMOUNT])
         print " %s \t %.2f " % (record[NAME], record[AMOUNT])
-    print " Total Expenditure \t %.2f " % totalexp
+    print "\n Total Expenditure \t %.2f " % totalexp
     print "                                       \n"
-    dif =totalin - totalexp
+    dif = totalin - totalexp
     print " Surplus / Deficit \t %.2f" % dif
-    print "_______________________________________\n"
-    # TODO
-#    return the two dictionaries
+    print "---------------------------------------\n"
+#  
 
 ###############################################################################
 # main - starts the program
