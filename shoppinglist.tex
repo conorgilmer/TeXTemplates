@@ -1,0 +1,48 @@
+\documentclass[12pt]{article}
+\usepackage{amsmath, amsfonts, amssymb, array}
+\usepackage{graphicx, fancyhdr, color}
+\usepackage[bottom=1in, top=1in, left=.5in, right=.5in]{geometry}
+\usepackage{paralist}
+\usepackage{tabto}
+
+\renewcommand{\familydefault}{\sfdefault}
+
+\pagestyle{fancy}
+\fancypagestyle{firststyle} % This ensures that the header is only on page one
+{
+\fancyhead{}
+\fancyhead[L]{{\large Week of:\underline{\hspace{5cm}} \hspace{1cm} \textbf{B:} \hspace{1.5cm} \textbf{L:} \hspace{1.5cm} \textbf{D:} \hspace{1.5cm} \fbox{Cost: \hspace{2cm}}}}}
+\renewcommand{\headrulewidth}{0pt} % Removes the horizontal bar across the header
+\fancyfoot{}
+\fancyfoot[C]{\thepage \\ \small{rev: \today}}
+
+\newcommand\mydiv[2]{%
+$\strut#1$\kern.25em\smash{\raise.3ex\hbox{$\big)$}}$\mkern-8mu
+ \overline{\enspace\strut#2}$}
+
+\newenvironment{tabbedenum}[1]
+ {\NumTabs{#1}\inparaenum\let\latexitem\item
+  \def\item{\def\item{\tab\latexitem}\latexitem}}
+ {\endinparaenum}
+
+\setlength{\parindent}{0mm}
+
+\begin{document}
+\thispagestyle{firststyle}
+
+\setlength{\fboxrule}{1.5pt}
+
+\framebox[2.5in][l]{ \parbox[t][1.5in]{1in}{} }
+\framebox[2.5in][l]{ \parbox[t][1.5in]{1in}{
+\begin{itemize} \itemsep-20pt
+ \renewcommand{\labelitemi}{$\Box$} 
+ \item  \underline{\hspace{2cm}} \\
+ \item  \underline{\hspace{2cm}} \\
+ \item  \underline{\hspace{2cm}} 
+\end{itemize}
+
+} }
+
+
+
+\end{document}
