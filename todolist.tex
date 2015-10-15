@@ -1,0 +1,31 @@
+\documentclass{article}
+\usepackage{xcolor}
+%\usepackage{lipsum}% just to generate text
+
+\newcounter{todo}
+\newcommand\todo[1]{\refstepcounter{todo}\marginpar{\color{red}{#1}}\addcontentsline{tod}{subsection}{#1~\thetodo}}%
+
+
+\makeatletter
+\newcommand\todoname{todo}
+\newcommand\listtodoname{List of todos}
+\newcommand\listoftodos{%
+  \section*{\listtodoname}\@starttoc{tod}}
+\makeatother
+
+\begin{document}
+
+\listoftodos
+
+\section{Elaborate on To Dos}
+
+\begin{enumerate}
+\item Sort out Samsung phone speaker issue, bring to three shop or samsung shop.\todo{Phone Fix}
+\item Print out brochures.\todo{Brochure Print}
+\item Register Developers account and client area. Post on website partnership. \todo{Dev Register}
+\item Renew Domains, move to one registar with the best deal, and where you host if possible. \todo{Renew Domains}
+\end{enumerate}
+
+
+
+\end{document}
