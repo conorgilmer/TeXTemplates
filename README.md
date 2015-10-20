@@ -4,3 +4,4 @@ TeX Templates
 + letter
 + report
 + chess match scorecard
++ basic articles
