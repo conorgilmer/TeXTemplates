@@ -1,0 +1,59 @@
+\documentclass{article}
+
+%Title "page"
+\title{Basic \LaTeX{} Article Example}
+\author{Butch  \\
+	Cassidy Inc  \\
+	\and 
+	The Kid \\
+	Sundance Inc \thanks{To all at Sundance}\\
+	\and 
+	Clarke Kent\\
+	Smallville\\
+	}
+%todays date
+\date{\today}
+
+
+\begin{document}
+
+\maketitle
+
+% abstract
+\begin{abstract}
+A template outlining a basic latex document \ldots 
+\end{abstract}
+
+% first section Introduction
+\section{Introduction}
+\LaTeX{} is often difficult to get up and running on, but its facilities and benefits are well worth the efforts, this is a basic article document.
+
+\paragraph{Outline}
+Has everything on this page, title, introduction, sections, conclusion and references.
+
+%page break
+\newpage   
+
+%section 2
+\section{First Section}
+Here is the first section you can use a variety of different tools, in this case I use TeXmaker and MacTeX.
+
+%section online latex
+\section{Online LaTeX}
+There are a couple of online services which allow you to use LaTex online
+\begin{itemize}
+\item Share LaTeX
+\item OverLeaf - formerly WriteLaTeX
+\end{itemize}
+
+% conclusions section
+\section{Conclusions}\label{conclusions}
+I was dreaming when I wrote this \cite{prince}.
+
+%Bibliography / Refernences section
+\begin{thebibliography}{9}
+\bibitem[Prince]{prince} \emph{2000 Zero Zero},
+Prince 1999. 
+\end{thebibliography}
+
+\end{document}
