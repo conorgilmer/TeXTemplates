@@ -7,3 +7,4 @@ TeX Templates
 + basic articles
 + basic report using beamer class (club annual report)
 + basic club accouts Income and balance sheet
++ proposal using bibtex
